@@ -45,7 +45,7 @@ ZSH_THEME="blinks"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git lein ruby macports screen osx npm rbenv nvm battery zsh-syntax-highlighting)
+plugins=(git lein ruby macports screen osx npm rbenv pyenv nvm battery zsh-syntax-highlighting)
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
@@ -92,8 +92,14 @@ eval "$(rbenv init -)"
 export NVM_DIR="/Users/lynxluna/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# PYEnv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # Right Prompt
 # RBENV_RUBY_VER="$(rbenv version-name)"
 # NVM_NPM_VER="$(nvm current)"
-# LEIN_VER="$(echo `lein -v` | cut -d ' ' -f2 -)" 
-RPROMPT='R %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}%  N %{$fg[magenta]%}$(nvm current)%{$reset_color%}%  %{$fg[cyan]%}$(battery_pct_prompt)%{$reset_color%}%'
+# LEIN_VER="$(echo `lein -v` | cut -d ' ' -f2 -)"
+
+RPROMPT='🐍 %{$fg[magenta]%}$(pyenv_prompt_info)%{$reset_color%}%  💎 %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}%  N %{$fg[magenta]%}$(nvm current)%{$reset_color%}%  🔋 %{$fg[cyan]%}$(battery_pct_prompt)%{$reset_color%}%'

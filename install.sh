@@ -34,11 +34,12 @@ wget "https://iterm2.com/downloads/stable/iTerm2_v2_0.zip" -O "/tmp/iTerm2.zip" 
   ditto -xk /tmp/iTerm2.zip /Applications/
 
 print "[DONE]\n"
-print "Installing rbenv..."
+print "Installing rbenv and pyenv..."
 
 git clone https://github.com/sstephenson/rbenv.git ${HOME}/.rbenv
 ln -s ${HOME}/.rbenv/bin/rbenv ${HOME}/soft/bin/rbenv 
 git clone https://github.com/sstephenson/ruby-build.git ${HOME}/.rbenv/plugins/ruby-build
+curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 
 print "[DONE]\n"
 

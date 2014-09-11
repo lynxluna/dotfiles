@@ -84,6 +84,7 @@ export ARCHFLAGS="-arch x86_64"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias xctool=${HOME}/.xctool/xctool.sh
 
 # RBEnv
 eval "$(rbenv init -)"

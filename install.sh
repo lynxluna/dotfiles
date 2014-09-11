@@ -7,7 +7,7 @@ print "Cloning OH-MY-ZSH.."
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ${HOME}/.oh-my-zsh
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${HOME}/.oh-my-zsh/custom/plugins
-
+git clone https://github.com/facebook/xctool.git ~/.xctool/
 print "[DONE]\n"
 
 git submodule update --init --recursive

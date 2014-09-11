@@ -5,7 +5,8 @@ chsh -s /bin/zsh
 
 print "Cloning OH-MY-ZSH.."
 
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone git://github.com/robbyrussell/oh-my-zsh.git ${HOME}/.oh-my-zsh
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${HOME}/.oh-my-zsh/custom/plugins
 
 print "[DONE]\n"
 

@@ -45,7 +45,9 @@ ZSH_THEME="blinks"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git lein ruby macports screen osx npm rbenv nvm battery)
+plugins=(git lein ruby macports screen osx npm rbenv nvm battery zsh-syntax-highlighting)
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 source $ZSH/oh-my-zsh.sh
 

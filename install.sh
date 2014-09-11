@@ -37,6 +37,7 @@ print "Installing rbenv..."
 
 git clone https://github.com/sstephenson/rbenv.git ${HOME}/.rbenv
 ln -s ${HOME}/.rbenv/bin/rbenv ${HOME}/soft/bin/rbenv 
+git clone https://github.com/sstephenson/ruby-build.git ${HOME}/.rbenv/plugins/ruby-build
 
 print "[DONE]\n"
 

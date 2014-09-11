@@ -83,4 +83,8 @@ export ARCHFLAGS="-arch x86_64"
 
 
 # RBEnv
-eval "$(rbenv init -)" 
+eval "$(rbenv init -)"
+
+# nVM
+export NVM_DIR="/Users/lynxluna/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

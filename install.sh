@@ -1,14 +1,20 @@
 #!/bin/sh
-set -e
+print "This file is just for reference, the command is broken, don't execute directly"
+exit 0
 
+cp fonts/* ${HOME}/Library/Fonts
+
+set -e
 chsh -s /bin/zsh
 
 print "Cloning OH-MY-ZSH.."
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ${HOME}/.oh-my-zsh
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${HOME}/.oh-my-zsh/custom/plugins
-git clone https://github.com/facebook/xctool.git ~/.xctool/
+git clone https://github.com/facebook/xctool.git ${HOME}/.xctool/
 print "[DONE]\n"
+
+
 
 git submodule update --init --recursive
 
@@ -48,5 +54,7 @@ print "Installing iTerm2 prefs..."
 plutil -convert binary1 com.googlecode.iterm2.xml.plist -o ${HOME}/Library/Preferences/com.googlecode.iterm2.plist
 
 print "[DONE]\n"
+
+print "TODO: Installing PLEnv"
 
 echo "You'd need to restart your shell to use the newly configured environments.\n Todo: Java, Leiningen, and RBenv Ruby Installation"

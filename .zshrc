@@ -103,4 +103,9 @@ eval "$(pyenv virtualenv-init -)"
 # NVM_NPM_VER="$(nvm current)"
 # LEIN_VER="$(echo `lein -v` | cut -d ' ' -f2 -)"
 
-RPROMPT='🐍 %{$fg[magenta]%}$(pyenv_prompt_info)%{$reset_color%}%  💎 %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}%  N %{$fg[magenta]%}$(nvm current)%{$reset_color%}%  🔋 %{$fg[cyan]%}$(battery_pct_prompt)%{$reset_color%}%'
+RPROMPT='🐪  %{$fg[magenta]%}$(plenv global)%{$reset_color%}%  🐍 %{$fg[magenta]%}$(pyenv_prompt_info)%{$reset_color%}%  💎 %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}% %{$fg[white]%} ⬡%{$reset_color%}%  %{$fg[magenta]%}$(nvm_prompt_info)%{$reset_color%}%  🔋 %{$fg[cyan]%}$(battery_pct_prompt)%{$reset_color%}%'
+
+# PLENV
+
+export PATH="$HOME/.plenv/bin:$PATH"
+eval "$(plenv init -)"

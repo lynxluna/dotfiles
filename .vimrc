@@ -8,6 +8,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set background=dark
+colorscheme solarized
 set cursorline
 execute "set colorcolumn=" . join(range(120,335), ',')
 syntax on
@@ -23,7 +24,6 @@ set smartcase
 
 set number
 set ruler
-colorscheme solarized
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
@@ -36,6 +36,7 @@ autocmd VimEnter * NERDTree
 nmap <buffer> ,ee :%Eval<CR>
 nmap <buffer> ,ef :Eval<CR>
 nmap <buffer> ,b :buffers <CR>
+nnoremap <F5> "=strftime("%b %d, %Y")"<CR>P
 
 let g:rbpt_colorpairs = [
   \ [ '13', '#6c71c4'],

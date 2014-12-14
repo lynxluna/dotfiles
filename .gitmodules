@@ -49,9 +49,12 @@
 [submodule ".vim/bundle/vimproc.vim"]
 	path = .vim/bundle/vimproc.vim
 	url = https://github.com/Shougo/vimproc.vim.git
+[submodule ".vim/bundle/play2vim"]
+	path = .vim/bundle/play2vim
+	url = https://github.com/gre/play2vim.git
 [submodule ".vim/bundle/vim-scala"]
 	path = .vim/bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
-[submodule ".vim/bundle/vim-jekyll"]
-	path = .vim/bundle/vim-jekyll
-	url = git@github.com:itspriddle/vim-jekyll.git
+[submodule ".vim/bundle/html5.vim"]
+	path = .vim/bundle/html5.vim
+	url = https://github.com/othree/html5.vim.git

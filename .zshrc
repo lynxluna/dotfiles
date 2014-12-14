@@ -58,7 +58,7 @@ export NDK_ROOT="${NDK_HOME}"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH="${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools":$NDK_HOME:$PATH
 
-export PATH=/opt/local/bin:/opt/local/sbin:/Users/sumyandityo/soft/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/Users/lynxluna/soft/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -94,7 +94,7 @@ alias xctool=${HOME}/.xctool/xctool.sh
 eval "$(rbenv init -)"
 
 # nVM
-export NVM_DIR="/Users/sumyandityo/.nvm"
+export NVM_DIR="/Users/lynxluna/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # PYEnv
@@ -114,7 +114,11 @@ RPROMPT='🐪  %{$fg[magenta]%}$(plenv global)%{$reset_color%}%  🐍 %{$fg[mage
 export PATH="$HOME/.plenv/bin:$PATH"
 eval "$(plenv init -)"
 
-# Disabling GREP OPTIONS
+# GREP update
 
 unset GREP_OPTIONS
 alias grep='grep --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn'
+
+# PHPENV
+export PATH="$HOME/.phpenv/bin:$PATH"
+eval "$(phpenv init -)"

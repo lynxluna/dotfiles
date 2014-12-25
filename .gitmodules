@@ -58,3 +58,12 @@
 [submodule ".vim/bundle/html5.vim"]
 	path = .vim/bundle/html5.vim
 	url = https://github.com/othree/html5.vim.git
+[submodule ".vim/bundle/sbt-vim"]
+	path = .vim/bundle/sbt-vim
+	url = git@github.com:ktvoelker/sbt-vim.git
+[submodule ".vim/bundle/plantuml-syntax"]
+	path = .vim/bundle/plantuml-syntax
+	url = git@github.com:aklt/plantuml-syntax.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git

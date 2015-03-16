@@ -70,9 +70,6 @@
 [submodule ".vim/bundle/vim-jekyll"]
 	path = .vim/bundle/vim-jekyll
 	url = git@github.com:itspriddle/vim-jekyll.git
-[submodule ".vim/bundle/plantuml-syntax"]
-	path = .vim/bundle/plantuml-syntax
-	url = git@github.com:aklt/plantuml-syntax.git
 [submodule ".vim/bundle/Dockerfile.vim"]
 	path = .vim/bundle/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim.git

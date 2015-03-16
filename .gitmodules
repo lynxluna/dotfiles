@@ -76,3 +76,15 @@
 [submodule ".vim/bundle/Dockerfile.vim"]
 	path = .vim/bundle/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule ".vim/bundle/vimple.vim"]
+	path = .vim/bundle/vimple.vim
+	url = https://github.com/dahu/vimple.git
+[submodule ".vim/bundle/asif.vim"]
+	path = .vim/bundle/asif.vim
+	url = https://github.com/dahu/Asif.git
+[submodule ".vim/bundle/SyntaxRange"]
+	path = .vim/bundle/SyntaxRange
+	url = https://github.com/vim-scripts/SyntaxRange.git
+[submodule ".vim/bundle/vim-asciidoc"]
+	path = .vim/bundle/vim-asciidoc
+	url = https://github.com/dahu/vim-asciidoc.git

@@ -91,6 +91,7 @@ export ARCHFLAGS="-arch x86_64"
 alias xctool=${HOME}/.xctool/xctool.sh
 
 # RBEnv
+export PATH="${HOME}/.rbenv/bin":$PATH
 eval "$(rbenv init -)"
 
 # nVM
@@ -122,3 +123,8 @@ alias grep='grep --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-di
 # PHPENV
 export PATH="$HOME/.phpenv/bin:$PATH"
 eval "$(phpenv init -)"
+
+# Finder aliases
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO && killall Finder /System/Library/CoreServices/Finder.app'
+

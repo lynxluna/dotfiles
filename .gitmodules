@@ -88,3 +88,6 @@
 [submodule ".vim/bundle/vim-asciidoc"]
 	path = .vim/bundle/vim-asciidoc
 	url = https://github.com/dahu/vim-asciidoc.git
+[submodule ".vim/bundle/vim-go"]
+	path = .vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go.git

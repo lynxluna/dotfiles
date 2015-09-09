@@ -48,3 +48,5 @@ let g:rbpt_colorpairs = [
   \ [ '6',  '#2aa198'],
   \ [ '4',  '#268bd2'],
   \ ]
+
+let g:templates_no_autocmd = 1

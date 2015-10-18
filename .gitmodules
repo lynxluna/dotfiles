@@ -100,6 +100,7 @@
 [submodule ".vim/bundle/swift.vim"]
 	path = .vim/bundle/swift.vim
 	url = https://github.com/keith/swift.vim.git
-[submodule ".vim/kotlin-vim"]
-	path = .vim/kotlin-vim
+
+[submodule ".vim/bundle/kotlin-vim"]
+	path = .vim/bundle/kotlin-vim
 	url = https://github.com/udalov/kotlin-vim.git

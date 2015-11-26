@@ -53,7 +53,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export ANDROID_HOME="${HOME}/Projects/SDKs/android-sdk-macosx"
-export NDK_HOME="${HOME}/Projects/SDKs/android-ndk-r10d"
+export NDK_HOME="${HOME}/Projects/SDKs/android-ndk-r10e"
 export NDK_ROOT="${NDK_HOME}"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH="${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools":$NDK_HOME:$PATH
@@ -122,10 +122,18 @@ unset GREP_OPTIONS
 alias grep='grep --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn'
 
 # PHPENV
-export PATH="$HOME/.phpenv/bin:$PATH"
-eval "$(phpenv init -)"
+# export PATH="$HOME/.phpenv/bin:$PATH"
+# eval "$(phpenv init -)"
+
+# php-version
+# source "${HOME}/local/php-version/php-version.sh" && php-version 5
 
 # Finder aliases
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO && killall Finder /System/Library/CoreServices/Finder.app'
 
+# Java Home
+export JAVA_HOME=`/usr/libexec/java_home`
+
+# added by travis gem
+[ -f /Users/lynxluna/.travis/travis.sh ] && source /Users/lynxluna/.travis/travis.sh

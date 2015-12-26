@@ -53,7 +53,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export ANDROID_HOME="${HOME}/Projects/SDKs/android-sdk-macosx"
-export NDK_HOME="${HOME}/Projects/SDKs/android-ndk-r10e"
+export NDK_HOME="${ANDROID_HOME}/ndk-bundle"
 export NDK_ROOT="${NDK_HOME}"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH="${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools":$NDK_HOME:$PATH

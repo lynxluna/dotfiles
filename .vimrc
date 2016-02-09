@@ -31,6 +31,8 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd BufNewFile,BufReadPost BUCK set filetype=python
+autocmd BufNewFile,BufReadPost Fastfile set filetype=ruby
 autocmd VimEnter * NERDTree
 
 nmap <buffer> ,ee :%Eval<CR>

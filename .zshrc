@@ -52,7 +52,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export ANDROID_HOME="${HOME}/Projects/SDKs/android-sdk-macosx"
+export ANDROID_HOME="${HOME}/Library/Android/sdk"
 export NDK_HOME="${ANDROID_HOME}/ndk-bundle"
 export NDK_ROOT="${NDK_HOME}"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
@@ -137,3 +137,5 @@ export JAVA_HOME=`/usr/libexec/java_home`
 
 # added by travis gem
 [ -f /Users/lynxluna/.travis/travis.sh ] && source /Users/lynxluna/.travis/travis.sh
+
+[ -s "/Users/Didit/.dnx/dnvm/dnvm.sh" ] && . "/Users/Didit/.dnx/dnvm/dnvm.sh" # Load dnvm

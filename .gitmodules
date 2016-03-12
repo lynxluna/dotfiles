@@ -110,3 +110,6 @@
 [submodule ".vim/bundle/supertab"]
 	path = .vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule ".vim/bundle/vim-elixir"]
+	path = .vim/bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git

@@ -144,7 +144,7 @@ export JAVA_HOME=`/usr/libexec/java_home`
 . ${HOME}/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 PS1="$PS1"$'\n'"%% "
-POWERLINE_THEME_OVERRIDES="default_leftonly.segment_data.branch.args.status_colors=true"
+export POWERLINE_THEME_OVERRIDES="default_leftonly.segment_data.branch.args.status_colors=true"
 RPROMPT='🐪  %{$fg[magenta]%}$(plenv global)%{$reset_color%}%  🐍 %{$fg[magenta]%}$(pyenv_prompt_info)%{$reset_color%}%  💎 %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}% %{$fg[white]%} ⬡%{$reset_color%}%  %{$fg[magenta]%}$(nvm_prompt_info)%{$reset_color%}%  🔋 %{$fg[cyan]%}$(battery_pct_prompt)%{$reset_color%}%'
 
 #

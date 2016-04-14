@@ -1,4 +1,6 @@
 execute pathogen#infect()
+set number
+set relativenumber
 set nocompatible
 set backspace=2 " make backspace work like most other apps
 set backspace=indent,eol,start

@@ -60,6 +60,7 @@ export PATH="${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools":$NDK_HOME:$PA
 
 export PATH=/opt/local/bin:/opt/local/sbin:${HOME}/soft/bin:$PATH
 
+export PATH=${HOME}/.local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -139,3 +140,11 @@ export JAVA_HOME=`/usr/libexec/java_home`
 [ -f /Users/lynxluna/.travis/travis.sh ] && source /Users/lynxluna/.travis/travis.sh
 
 [ -s "/Users/Didit/.dnx/dnvm/dnvm.sh" ] && . "/Users/Didit/.dnx/dnvm/dnvm.sh" # Load dnvm
+
+. ${HOME}/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+PS1="$PS1"$'\n'"%% "
+POWERLINE_THEME_OVERRIDES="default_leftonly.segment_data.branch.args.status_colors=true"
+RPROMPT='🐪  %{$fg[magenta]%}$(plenv global)%{$reset_color%}%  🐍 %{$fg[magenta]%}$(pyenv_prompt_info)%{$reset_color%}%  💎 %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}% %{$fg[white]%} ⬡%{$reset_color%}%  %{$fg[magenta]%}$(nvm_prompt_info)%{$reset_color%}%  🔋 %{$fg[cyan]%}$(battery_pct_prompt)%{$reset_color%}%'
+
+#

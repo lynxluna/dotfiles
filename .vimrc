@@ -1,4 +1,5 @@
 execute pathogen#infect()
+set tags=tags;/,codex.tags;/
 set number
 set relativenumber
 set nocompatible
@@ -26,6 +27,18 @@ set smartcase
 
 set number
 set ruler
+set nowrap
+set incsearch
+set mouse=a
+set history=1000
+set clipboard=unnamedplus,autoselect
+set completeopt=menuone,menu,longest
+
+set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
+set wildmode=longest,list,full
+set wildmenu
+set completeopt+=longest
+set cmdheight=1
 
 set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
@@ -51,14 +64,55 @@ nmap <buffer> ,b :buffers <CR>
 nnoremap <F5> "=strftime("%b %d, %Y")"<CR>P
 
 let g:rbpt_colorpairs = [
-  \ [ '13', '#6c71c4'],
-  \ [ '5',  '#d33682'],
-  \ [ '1',  '#dc322f'],
-  \ [ '9',  '#cb4b16'],
-  \ [ '3',  '#b58900'],
-  \ [ '2',  '#859900'],
-  \ [ '6',  '#2aa198'],
-  \ [ '4',  '#268bd2'],
-  \ ]
+      \ [ '13', '#6c71c4'],
+      \ [ '5',  '#d33682'],
+      \ [ '1',  '#dc322f'],
+      \ [ '9',  '#cb4b16'],
+      \ [ '3',  '#b58900'],
+      \ [ '2',  '#859900'],
+      \ [ '6',  '#2aa198'],
+      \ [ '4',  '#268bd2'],
+      \ ]
 
 let g:templates_no_autocmd = 1
+
+map <Leader>s :SyntasticToggleMode<CR>
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+map <silent> tw :GhcModTypeInsert<CR>
+map <silent> ts :GhcModSplitFunCase<CR>
+map <silent> tq :GhcModType<CR>
+map <silent> te :GhcModTypeClear<CR>
+
+let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+
+if has("gui_running")
+  imap <c-space> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
+else " no gui
+  if has("unix")
+    inoremap <Nul> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
+  endif
+endif
+
+let g:haskellmode_completion_ghc = 1
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+
+let g:haskell_tabular = 1
+
+vmap a= :Tabularize /=<CR>
+vmap a; :Tabularize /::<CR>
+vmap a- :Tabularize /-><CR>
+
+map <silent> <Leader>t :CtrlP()<CR>
+noremap <leader>b<space> :CtrlPBuffer<cr>
+let g:ctrlp_custom_ignore = '\v[\/]dist$'
+
+

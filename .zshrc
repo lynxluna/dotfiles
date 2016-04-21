@@ -52,7 +52,13 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export ANDROID_HOME="${HOME}/Library/Android/sdk"
+OLD_ANDROID_HOME=${HOME}/Projects/SDKs/android-sdk-macosx
+if test -e "${OLD_ANDROID_HOME}";
+then
+  export ANDROID_HOME="${OLD_ANDROID_HOME}"
+else
+  export ANDROID_HOME="${HOME}/Library/Android/sdk"
+fi
 export NDK_HOME="${ANDROID_HOME}/ndk-bundle"
 export NDK_ROOT="${NDK_HOME}"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"

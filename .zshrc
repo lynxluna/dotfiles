@@ -154,3 +154,4 @@ export POWERLINE_THEME_OVERRIDES="default_leftonly.segment_data.branch.args.stat
 RPROMPT='🐪  %{$fg[magenta]%}$(plenv global)%{$reset_color%}%  🐍 %{$fg[magenta]%}$(pyenv_prompt_info)%{$reset_color%}%  💎 %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}% %{$fg[white]%} ⬡%{$reset_color%}%  %{$fg[magenta]%}$(nvm_prompt_info)%{$reset_color%}%  🔋 %{$fg[cyan]%}$(battery_pct_prompt)%{$reset_color%}%'
 
 #
+[[ -s /Users/lynxluna/.rsvm/rsvm.sh ]] && . /Users/lynxluna/.rsvm/rsvm.sh # This loads RSVM

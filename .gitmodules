@@ -149,3 +149,6 @@
 [submodule ".vim/bundle/apiblueprint.vim"]
 	path = .vim/bundle/apiblueprint.vim
 	url = https://github.com/kylef/apiblueprint.vim.git
+[submodule ".vim/bundle/vim-jsx"]
+	path = .vim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git

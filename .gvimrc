@@ -1,4 +1,4 @@
-set guifont=Inconsolata\-dz\ for\ Powerline:h15
+set guifont=Fantasque\ Sans\ Mono:h18
 set guioptions-=r
 set guioptions-=L
 

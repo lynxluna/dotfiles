@@ -147,7 +147,7 @@ export JAVA_HOME=`/usr/libexec/java_home`
 
 [ -s "/Users/Didit/.dnx/dnvm/dnvm.sh" ] && . "/Users/Didit/.dnx/dnvm/dnvm.sh" # Load dnvm
 
-. ${HOME}/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+. ${HOME}/.pyenv/versions/2.7.12/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 PS1="$PS1"$'\n'"%% "
 export POWERLINE_THEME_OVERRIDES="default_leftonly.segment_data.branch.args.status_colors=true"

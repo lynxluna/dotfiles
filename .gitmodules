@@ -161,3 +161,6 @@
 [submodule ".vim/bundle/UltiSnips"]
 	path = .vim/bundle/UltiSnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule ".vim/bundle/elm-vim"]
+	path = .vim/bundle/elm-vim
+	url = https://github.com/ElmCast/elm-vim.git

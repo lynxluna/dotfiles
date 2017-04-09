@@ -22,6 +22,8 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 
+set clipboard=unnamed
+
 set ignorecase
 set smartcase
 
@@ -31,7 +33,6 @@ set nowrap
 set incsearch
 set mouse=a
 set history=1000
-set clipboard=unnamedplus,autoselect
 set completeopt=menuone,menu,longest
 
 set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox

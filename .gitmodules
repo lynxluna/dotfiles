@@ -167,3 +167,6 @@
 [submodule ".vim/bundle/vim-liquid"]
 	path = .vim/bundle/vim-liquid
 	url = https://github.com/tpope/vim-liquid.git
+[submodule ".vim/bundle/vim-terraform"]
+	path = .vim/bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git

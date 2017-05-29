@@ -45,14 +45,14 @@ ZSH_THEME="blinks"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git lein ruby macports screen osx npm rbenv pyenv nvm battery zsh-syntax-highlighting)
+plugins=(git lein ruby macports screen osx npm rbenv pyenv nvm zsh-syntax-highlighting)
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-OLD_ANDROID_HOME=${HOME}/Projects/SDKs/android-sdk-macosx
+OLD_ANDROID_HOME=${HOME}/Projects/SDKs/android
 if test -e "${OLD_ANDROID_HOME}";
 then
   export ANDROID_HOME="${OLD_ANDROID_HOME}"
@@ -62,7 +62,7 @@ fi
 export NDK_HOME="${ANDROID_HOME}/ndk-bundle"
 export NDK_ROOT="${NDK_HOME}"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-export PATH="${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools":$NDK_HOME:$PATH
+export PATH="${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin":$NDK_HOME:$PATH
 
 export PATH=/opt/local/bin:/opt/local/sbin:${HOME}/soft/bin:$PATH
 
@@ -116,7 +116,7 @@ eval "$(pyenv virtualenv-init -)"
 # NVM_NPM_VER="$(nvm current)"
 # LEIN_VER="$(echo `lein -v` | cut -d ' ' -f2 -)"
 
-RPROMPT='🐪  %{$fg[magenta]%}$(plenv global)%{$reset_color%}%  🐍 %{$fg[magenta]%}$(pyenv_prompt_info)%{$reset_color%}%  💎 %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}% %{$fg[white]%} ⬡%{$reset_color%}%  %{$fg[magenta]%}$(nvm_prompt_info)%{$reset_color%}%  🔋 %{$fg[cyan]%}$(battery_pct_prompt)%{$reset_color%}%'
+RPROMPT='🐪  %{$fg[magenta]%}$(plenv global)%{$reset_color%}%  🐍 %{$fg[magenta]%}$(pyenv_prompt_info)%{$reset_color%}%  💎 %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}% %{$fg[white]%} ⬡%{$reset_color%}%  %{$fg[magenta]%}$(nvm_prompt_info)%{$reset_color%}%'
 
 # PLENV
 
@@ -147,11 +147,11 @@ export JAVA_HOME=`/usr/libexec/java_home`
 
 [ -s "/Users/Didit/.dnx/dnvm/dnvm.sh" ] && . "/Users/Didit/.dnx/dnvm/dnvm.sh" # Load dnvm
 
-. ${HOME}/.pyenv/versions/2.7.12/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+. ${HOME}/.pyenv/versions/2.7.13/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 PS1="$PS1"$'\n'"%% "
 export POWERLINE_THEME_OVERRIDES="default_leftonly.segment_data.branch.args.status_colors=true"
-RPROMPT='🐪  %{$fg[magenta]%}$(plenv global)%{$reset_color%}%  🐍 %{$fg[magenta]%}$(pyenv_prompt_info)%{$reset_color%}%  💎 %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}% %{$fg[white]%} ⬡%{$reset_color%}%  %{$fg[magenta]%}$(nvm_prompt_info)%{$reset_color%}%  🔋 %{$fg[cyan]%}$(battery_pct_prompt)%{$reset_color%}%'
+RPROMPT='🐪  %{$fg[magenta]%}$(plenv global)%{$reset_color%}%  🐍 %{$fg[magenta]%}$(pyenv_prompt_info)%{$reset_color%}%  💎 %{$fg[magenta]%}$(rbenv_prompt_info)%{$reset_color%}% %{$fg[white]%} ⬡%{$reset_color%}%  %{$fg[magenta]%}$(nvm_prompt_info)%{$reset_color%}%'
 
 #
 [[ -s /Users/lynxluna/.rsvm/rsvm.sh ]] && . /Users/lynxluna/.rsvm/rsvm.sh # This loads RSVM

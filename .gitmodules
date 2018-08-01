@@ -179,3 +179,18 @@
 [submodule "vim/bundle/dart-vim-plugin"]
 	path = vim/bundle/dart-vim-plugin
 	url = https://github.com/dart-lang/dart-vim-plugin
+[submodule ".vim/bundle/dart-vim-plugin"]
+	path = .vim/bundle/dart-vim-plugin
+	url = https://github.com/dart-lang/dart-vim-plugin
+[submodule ".vim/bundle/vim-bazel.git"]
+	path = .vim/bundle/vim-bazel.git
+	url = https://github.com/bazelbuild/vim-bazel.git
+[submodule ".vim/bundle/vim-maktaba"]
+	path = .vim/bundle/vim-maktaba
+	url = https://github.com/google/vim-maktaba.git
+[submodule ".vim/bundle/vim-objc"]
+	path = .vim/bundle/vim-objc
+	url = https://github.com/b4winckler/vim-objc.git
+[submodule ".vim/bundle/vim-plist"]
+	path = .vim/bundle/vim-plist
+	url = https://github.com/darfink/vim-plist.git

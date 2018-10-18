@@ -194,3 +194,6 @@
 [submodule ".vim/bundle/vim-plist"]
 	path = .vim/bundle/vim-plist
 	url = https://github.com/darfink/vim-plist.git
+[submodule ".vim/bundle/rust.vim"]
+	path = .vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git

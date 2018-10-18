@@ -41,7 +41,8 @@ set wildmenu
 set completeopt+=longest
 set cmdheight=1
 
-set rtp+=~/.pyenv/versions/2.7.14/lib/python2.7/site-packages/powerline/bindings/vim
+" set rtp+=~/.pyenv/versions/2.7.14/lib/python2.7/site-packages/powerline/bindings/vim
+set rtp+=/Users/lynxluna/.pyenv/versions/3.7.0/lib/python3.7/site-packages/powerline/bindings/vim
 set laststatus=2
 set t_Co=256
 set encoding=utf-8

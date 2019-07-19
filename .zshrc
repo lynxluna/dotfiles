@@ -159,3 +159,6 @@ RPROMPT='🐪  %{$fg[magenta]%}$(plenv global)%{$reset_color%}%  🐍 %{$fg[mage
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/lynxluna/.sdkman"
 [[ -s "/Users/lynxluna/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/lynxluna/.sdkman/bin/sdkman-init.sh"
+
+export GOPATH=${HOME}/Projects/golang
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin

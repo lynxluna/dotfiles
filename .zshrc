@@ -62,8 +62,8 @@ fi
 export NDK_HOME="${ANDROID_HOME}/ndk-bundle"
 export NDK_ROOT="${NDK_HOME}"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-export PATH="${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin":$NDK_HOME:$PATH
-
+export PATH="${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin":"${ANDROID_HOME}/platform-tools/":$NDK_HOME:$PATH
+export PATH=/opt/local/Library/Frameworks/Python.framework/Versions/3.7/bin/:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:${HOME}/soft/bin:$PATH
 
 export PATH=${HOME}/.local/bin:$PATH
@@ -139,15 +139,17 @@ alias grep='grep --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-di
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO && killall Finder /System/Library/CoreServices/Finder.app'
 
-# Java Home
-export JAVA_HOME=`/usr/libexec/java_home`
 
 # added by travis gem
 [ -f /Users/lynxluna/.travis/travis.sh ] && source /Users/lynxluna/.travis/travis.sh
 
 [ -s "/Users/Didit/.dnx/dnvm/dnvm.sh" ] && . "/Users/Didit/.dnx/dnvm/dnvm.sh" # Load dnvm
 
-. ${HOME}/.pyenv/versions/2.7.13/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+# . ${HOME}/.pyenv/versions/2.7.13/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# . /opt/local/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+. ${HOME}/.pyenv/versions/3.7.4/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 PS1="$PS1"$'\n'"%% "
 export POWERLINE_THEME_OVERRIDES="default_leftonly.segment_data.branch.args.status_colors=true"
@@ -162,3 +164,11 @@ export SDKMAN_DIR="/Users/lynxluna/.sdkman"
 
 export GOPATH=${HOME}/Projects/golang
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+# Java Home
+# export JAVA_HOME=`/usr/libexec/java_home`
+
+export PATH=$HOME/Projects/SDKs/flutter/bin:$HOME/Projects/SDKs/dart-sdk/bin:$PATH
+
+# This will make gopls happy
+export GOPACKAGESDRIVER=off

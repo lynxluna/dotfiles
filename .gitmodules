@@ -158,9 +158,6 @@
 [submodule ".vim/bundle/vim-es6"]
 	path = .vim/bundle/vim-es6
 	url = https://github.com/isRuslan/vim-es6.git
-[submodule ".vim/bundle/UltiSnips"]
-	path = .vim/bundle/UltiSnips
-	url = https://github.com/SirVer/ultisnips.git
 [submodule ".vim/bundle/elm-vim"]
 	path = .vim/bundle/elm-vim
 	url = https://github.com/ElmCast/elm-vim.git
@@ -200,3 +197,6 @@
 [submodule ".vim/bundle/vim-racer"]
 	path = .vim/bundle/vim-racer
 	url = https://github.com/racer-rust/vim-racer.git
+[submodule ".vim/bundle/robotframework-vim"]
+	path = .vim/bundle/robotframework-vim
+	url = git://github.com/mfukar/robotframework-vim.git
